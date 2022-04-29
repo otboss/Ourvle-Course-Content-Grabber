@@ -10,7 +10,7 @@
  * **** FOR BEST RESULTS DISABLE SAVE DESTINATION PROMPT ****
  * */
 
-const resourceIcons = document.querySelectorAll("img")
+const resourceIcons = document.querySelectorAll("a > img")
 for(let resourceIcon of resourceIcons){
     var picLink = resourceIcon["src"];
     if(
@@ -21,7 +21,7 @@ for(let resourceIcon of resourceIcons){
         || picLink.indexOf("document") >= 0
     ){
         resourceIcon.parentElement.setAttribute("download", true)
-        resourceIcon.parentElement.click();
+        resourceIcon.parentElement.click()
     }
     await new Promise((resolve) => setTimeout(resolve, 100))
 }

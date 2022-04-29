@@ -11,6 +11,7 @@
             "pdf",
             "archive",
             "powerpoint",
+            "spreadsheet",
             "document"
         ];
         document.querySelectorAll("a > img").forEach((resourceIcon) => {

@@ -12,7 +12,7 @@
 
 const resourceIcons = document.querySelectorAll("a > img")
 for(let resourceIcon of resourceIcons){
-    var picLink = resourceIcon["src"];
+    const picLink = resourceIcon["src"];
     if(
         picLink.indexOf("pdf") >= 0
         || picLink.indexOf("spreadsheet") >= 0

@@ -22,6 +22,6 @@ for(let resourceIcon of resourceIcons){
     ){
         resourceIcon.parentElement.setAttribute("download", true)
         resourceIcon.parentElement.click()
+        await new Promise(resolve => setTimeout(resolve, 100))
     }
-    await new Promise(resolve => setTimeout(resolve, 100))
 }
